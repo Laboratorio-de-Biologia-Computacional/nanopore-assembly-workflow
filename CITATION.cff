@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this workflow, please cite it as below."
 title: "Flujo de trabajo para ensamble de genomas a partir de lecturas Nanopore / Genome assembly workflow from Nanopore reads"
 version: "1.0.0"
-doi: "10.5281/zenodo.1234567"
+doi: ""
 authors:
   - family-names: "Meza Cova"
     given-names: "Luis Alberto"
@@ -10,7 +10,7 @@ authors:
   - family-names: "Balderas-Martínez"
     given-names: "Yalbi Itzel"
     affiliation: "LABBIC"
-date-released: 2024-12-01
+date-released: 2025-10-01
 url: "https://github.com/labbic/nanopore-assembly-workflow"
 license: "GPL-3.0"
 keywords:
