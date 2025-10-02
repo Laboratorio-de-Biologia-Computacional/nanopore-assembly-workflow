@@ -39,7 +39,7 @@ Esto correrá el flujo de trabajo con datos de prueba.
 Si utilizas este flujo de trabajo, por favor cítalo así:  
 
 APA:  
-Meza Cova, L. A., & Balderas-Martínez, Y. I. (2025). *Flujo de trabajo para ensamble de genomas a partir de lecturas Nanopore* (Version 1.0.0) [Software]. LABBIC. Zenodo. https://doi.org/10.5281/zenodo.1234567  
+Meza Cova, L. A., & Balderas-Martínez, Y. I. (2025). *Flujo de trabajo para ensamble de genomas a partir de lecturas Nanopore* (Version 1.0.0) [Software]. LABBIC.  
 
 BibTeX:  
 ```bibtex
