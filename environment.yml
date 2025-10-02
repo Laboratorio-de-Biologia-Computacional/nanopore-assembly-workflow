@@ -1,0 +1,10 @@
+name: nanopore-env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - porechop
+  - canu
+  - samtools
+  - python=3.9
