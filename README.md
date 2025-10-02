@@ -2,7 +2,6 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
 [![CI](https://github.com/tu_usuario/nanopore-assembly-workflow/actions/workflows/ci.yml/badge.svg)](https://github.com/tu_usuario/nanopore-assembly-workflow/actions/workflows/ci.yml)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)  
 
 ---
 
@@ -26,7 +25,7 @@ Colocar los archivos `*.fastq.gz` en el directorio y ejecutar:
 bash scripts/canuscript.sh
 ```
 
-Esto correrá el flujo con un dataset de ejemplo.
+Esto correrá el flujo de trabajo con datos de prueba.
 
 ---
 
@@ -36,22 +35,22 @@ Esto correrá el flujo con un dataset de ejemplo.
 
 ---
 
-## 📖 Citación
+## 📖 Cita
 Si utilizas este flujo de trabajo, por favor cítalo así:  
 
 APA:  
-Meza Cova, L. A., & Balderas-Martínez, Y. I. (2024). *Flujo de trabajo para ensamble de genomas a partir de lecturas Nanopore* (Version 1.0.0) [Software]. LABBIC. Zenodo. https://doi.org/10.5281/zenodo.1234567  
+Meza Cova, L. A., & Balderas-Martínez, Y. I. (2025). *Flujo de trabajo para ensamble de genomas a partir de lecturas Nanopore* (Version 1.0.0) [Software]. LABBIC. Zenodo. https://doi.org/10.5281/zenodo.1234567  
 
 BibTeX:  
 ```bibtex
-@software{meza_cova_balderas_2024_nanopore,
+@software{meza_cova_balderas_2025_nanopore,
   author       = {Meza Cova, Luis Alberto and Balderas-Martínez, Yalbi Itzel},
   title        = {Flujo de trabajo para ensamble de genomas a partir de lecturas Nanopore},
-  year         = {2024},
+  year         = {2025},
   version      = {1.0.0},
   publisher    = {LABBIC},
-  doi          = {10.5281/zenodo.1234567},
-  url          = {https://doi.org/10.5281/zenodo.1234567}
+  doi          = {},
+  url          = {}
 }
 ```
 
@@ -68,8 +67,7 @@ English version.
  🧬 Genome Assembly Workflow from Nanopore Reads  
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
-[![CI](https://github.com/tu_usuario/nanopore-assembly-workflow/actions/workflows/ci.yml/badge.svg)](https://github.com/tu_usuario/nanopore-assembly-workflow/actions/workflows/ci.yml)  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)  
+[![CI](https://github.com/tu_usuario/nanopore-assembly-workflow/actions/workflows/ci.yml/badge.svg)](https://github.com/Laboratorio-de-Biologia-Computacional/nanopore-assembly-workflow/actions/workflows/ci.yml)  
 
 ---
 
@@ -93,7 +91,7 @@ Place your `*.fastq.gz` files in the directory and run:
 bash scripts/canuscript.sh
 ```
 
-This will run the pipeline using the example dataset.
+This will run the pipeline using the example data.
 
 ---
 
@@ -107,23 +105,23 @@ This will run the pipeline using the example dataset.
 If you use this workflow, please cite it as follows:  
 
 APA:  
-Meza Cova, L. A., & Balderas-Martínez, Y. I. (2024). *Genome assembly workflow from Nanopore reads* (Version 1.0.0) [Software]. LABBIC. Zenodo. https://doi.org/10.5281/zenodo.1234567  
+Meza Cova, L. A., & Balderas-Martínez, Y. I. (2025). *Genome assembly workflow from Nanopore reads* (Version 1.0.0) [Software]. LABBIC.
 
 BibTeX:  
 ```bibtex
-@software{meza_cova_balderas_2024_nanopore,
+@software{meza_cova_balderas_2025_nanopore,
   author       = {Meza Cova, Luis Alberto and Balderas-Martínez, Yalbi Itzel},
   title        = {Genome assembly workflow from Nanopore reads},
-  year         = {2024},
+  year         = {2025},
   version      = {1.0.0},
   publisher    = {LABBIC},
-  doi          = {10.5281/zenodo.1234567},
-  url          = {https://doi.org/10.5281/zenodo.1234567}
+  doi          = {},
+  url          = {}
 }
 ```
 
 ---
 
 ## 📜 License
-This project is licensed under the **GPL v3 License**.  
+This workflow is licensed under the **GPL v3 License**.  
 See [LICENSE](LICENSE) for details.

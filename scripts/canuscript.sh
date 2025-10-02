@@ -1,6 +1,6 @@
 #!/bin/bash
 # Author: Ing. Luis Alberto Meza Cova - LABBIC
-# Co-author: Dra. Yalbi Itzel Balderas-Martínez - LABBIC
+# Co-author: Dra. Yalbi Itzel Balderas-Martinez - LABBIC
 
 # Trimming con Porechop
 mkdir resultados-ensamble
