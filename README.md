@@ -34,7 +34,7 @@ Esto correrá el flujo de trabajo con datos de prueba.
 ---
 
 ## 👩‍💻 Autores
-- **Ing. Luis Alberto Meza Cova** — LABBIC  
+- **Ing. Luis Alberto Meza-Cova** — LABBIC  
 - **Dra. Yalbi Itzel Balderas-Martínez** — LABBIC  
 
 ---
@@ -43,11 +43,11 @@ Esto correrá el flujo de trabajo con datos de prueba.
 Si utilizas este flujo de trabajo, por favor cítalo así:  
 
 APA:  
-Meza Cova, L. A., & Balderas-Martínez, Y. I. (2025). *Flujo de trabajo para ensamble de genomas a partir de lecturas Nanopore* (Version 1.0.0) [Software]. LABBIC.  
+Meza-Cova, L. A., & Balderas-Martínez, Y. I. (2025). *Flujo de trabajo para ensamble de genomas a partir de lecturas Nanopore* (Version 1.0.0) [Software]. LABBIC.  
 
 BibTeX:  
 ```bibtex
-@software{meza_cova_balderas_2025_nanopore,
+@software{meza_cova_balderas_martinez_2025_nanopore,
   author       = {Meza Cova, Luis Alberto and Balderas-Martínez, Yalbi Itzel},
   title        = {Flujo de trabajo para ensamble de genomas a partir de lecturas Nanopore},
   year         = {2025},
@@ -113,11 +113,11 @@ This will run the pipeline using the example data.
 If you use this workflow, please cite it as follows:  
 
 APA:  
-Meza Cova, L. A., & Balderas-Martínez, Y. I. (2025). *Genome assembly workflow from Nanopore reads* (Version 1.0.0) [Software]. LABBIC.
+Meza-Cova, L. A., & Balderas-Martínez, Y. I. (2025). *Genome assembly workflow from Nanopore reads* (Version 1.0.0) [Software]. LABBIC.
 
 BibTeX:  
 ```bibtex
-@software{meza_cova_balderas_2025_nanopore,
+@software{meza_cova_balderas_martinez_2025_nanopore,
   author       = {Meza Cova, Luis Alberto and Balderas-Martínez, Yalbi Itzel},
   title        = {Genome assembly workflow from Nanopore reads},
   year         = {2025},
