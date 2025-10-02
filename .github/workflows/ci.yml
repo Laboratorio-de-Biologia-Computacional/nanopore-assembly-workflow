@@ -1,0 +1,32 @@
+name: CI Nanopore Assembly Workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          python-version: 3.10
+          channels: bioconda,conda-forge,defaults
+          activate-environment: nanopore-env
+          use-mamba: true
+      - name: Install dependencies
+        run: |
+          conda install -y porechop canu samtools make
+      - name: Run test pipeline
+        run: make test
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        with:
+          name: test_output
+          path: test_output/
