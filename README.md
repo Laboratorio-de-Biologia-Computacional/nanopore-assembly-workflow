@@ -7,12 +7,14 @@
 
 ## 📌 Descripción
 Este repositorio contiene un flujo de trabajo reproducible para **ensamblaje de genomas a partir de lecturas Nanopore**.  
-Incluye pasos de **recorte de adaptadores con Porechop** y **ensamblaje de novo con Canu**, integrados en un script sencillo y probados con un dataset de ejemplo.
+Incluye pasos de **recorte de adaptadores con Porechop** y **ensamblaje de novo con Canu**, integrados en un script sencillo y probados con datos de prueba.
+Incluye integración con **Conda** y un workflow de **GitHub Actions** para ejecución automática.  
 
 ---
 
 ## ⚙️ Requisitos
-- Linux / macOS  
+- Linux / macOS
+- Conda (se instalará automáticamente en CI con `setup-miniconda`)  
 - Dependencias instaladas: `porechop`, `canu`, `samtools`, `make`  
 - Python 3.x (para actualizar changelog)
 
@@ -22,6 +24,8 @@ Incluye pasos de **recorte de adaptadores con Porechop** y **ensamblaje de novo 
 Colocar los archivos `*.fastq.gz` en el directorio y ejecutar:
 
 ```bash
+conda env create -f environment.yml
+conda activate nanopore-env
 bash scripts/canuscript.sh
 ```
 
@@ -74,11 +78,13 @@ English version.
 ## 📌 Description
 This repository provides a reproducible workflow for **genome assembly from Nanopore sequencing reads**.  
 It integrates **adapter trimming with Porechop** and **de novo assembly with Canu**, wrapped in a simple script and tested with a minimal dataset.
+Includes integration with **Conda** and a workflow of **GitHub Actions** for automatic execution. 
 
 ---
 
 ## ⚙️ Requirements
 - Linux / macOS  
+- Conda (automatic installation in CI with `setup-miniconda`)  
 - Installed dependencies: `porechop`, `canu`, `samtools`, `make`  
 - Python 3.x (for changelog updates)
 
@@ -88,6 +94,8 @@ It integrates **adapter trimming with Porechop** and **de novo assembly with Can
 Place your `*.fastq.gz` files in the directory and run:
 
 ```bash
+conda env create -f environment.yml
+conda activate nanopore-env
 bash scripts/canuscript.sh
 ```
 
