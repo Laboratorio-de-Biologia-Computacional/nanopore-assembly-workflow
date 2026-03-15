@@ -1,26 +1,26 @@
 #!/bin/bash
+# Flujo de trabajo para ensamble de genomas a partir de lecturas Nanopore
 # Author: Ing. Luis Alberto Meza Cova - LABBIC
 # Co-author: Dra. Yalbi Itzel Balderas-Martinez - LABBIC
+#
+# Uso: colocar archivos *.fastq.gz en el directorio actual y ejecutar:
+#   bash canuscript.sh
 
-# Trimming con Porechop
-mkdir resultados-ensamble
+set -euo pipefail
 
-ls *fastq.gz > lista.txt
+# --- Paso 1: Trimming con Porechop ---
+echo ">>> Paso 1: Trimming de adaptadores con Porechop..."
+mkdir -p resultados-ensamble/trimmed
 
-for i in $(cat lista.txt)
-do 
-  porechop -i $i  -o "porechop_$i"
+for f in *.fastq.gz; do
+  echo "  Procesando: $f"
+  porechop -i "$f" -o "resultados-ensamble/trimmed/porechop_$f"
 done
 
-rm lista.txt
+# --- Paso 2: Ensamble con Canu ---
+echo ">>> Paso 2: Ensamble de novo con Canu..."
+canu -p ensamble -d resultados-ensamble/canu \
+  genomeSize=29k -trimmed \
+  -nanopore resultados-ensamble/trimmed/*.fastq.gz
 
-mv porechop_* resultados-ensamble
-mv scripts/canuscript.sh resultados-ensamble
-cd resultados-ensamble
-
-# Ensamble con canu
-canu -p ensamble -d canu genomeSize=29k -trimmed -nanopore *.fastq.gz
-
-mkdir trimmed
-mv porechop_* trimmed
-mv canuscript.sh ../
+echo ">>> Pipeline completado. Resultados en resultados-ensamble/"

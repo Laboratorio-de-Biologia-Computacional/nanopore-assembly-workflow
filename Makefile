@@ -9,6 +9,7 @@ test:
 	@mkdir -p $(OUTDIR)
 	@cp $(SCRIPT) $(OUTDIR)/
 	@cp $(TESTDATA) $(OUTDIR)/
+	@gzip -f $(OUTDIR)/test.fastq
 	cd $(OUTDIR) && bash canuscript.sh
 	@echo ">>> Test completado. Resultados en $(OUTDIR)/"
 
@@ -19,7 +20,7 @@ clean:
 
 release:
 	@if [ -z "$(VERSION)" ]; then \
-	  echo "❌ ERROR: Usa make release VERSION=1.0.1 ADDED='...'"; \
+	  echo "ERROR: Usa make release VERSION=1.0.1 ADDED='...'"; \
 	  exit 1; \
 	fi
 	git tag v$(VERSION)
