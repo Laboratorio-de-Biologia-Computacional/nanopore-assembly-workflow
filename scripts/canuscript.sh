@@ -19,8 +19,10 @@ done
 
 # --- Paso 2: Ensamble con Canu ---
 echo ">>> Paso 2: Ensamble de novo con Canu..."
+CANU_EXTRA_OPTS="${CANU_EXTRA_OPTS:-}"
 canu -p ensamble -d resultados-ensamble/canu \
   genomeSize=29k -trimmed \
+  $CANU_EXTRA_OPTS \
   -nanopore resultados-ensamble/trimmed/*.fastq.gz
 
 echo ">>> Pipeline completado. Resultados en resultados-ensamble/"

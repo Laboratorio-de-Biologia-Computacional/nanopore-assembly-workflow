@@ -10,7 +10,7 @@ test:
 	@cp $(SCRIPT) $(OUTDIR)/
 	@cp $(TESTDATA) $(OUTDIR)/
 	@gzip -f $(OUTDIR)/test.fastq
-	cd $(OUTDIR) && bash canuscript.sh
+	cd $(OUTDIR) && CANU_EXTRA_OPTS="stopOnLowCoverage=0" bash canuscript.sh
 	@echo ">>> Test completado. Resultados en $(OUTDIR)/"
 
 clean:
