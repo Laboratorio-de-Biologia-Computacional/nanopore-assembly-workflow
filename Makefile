@@ -1,4 +1,4 @@
-SCRIPT = canuscript.sh
+SCRIPT = scripts/canuscript.sh
 TESTDATA = data/test.fastq
 OUTDIR = test_output
 
@@ -9,7 +9,7 @@ test:
 	@mkdir -p $(OUTDIR)
 	@cp $(SCRIPT) $(OUTDIR)/
 	@cp $(TESTDATA) $(OUTDIR)/
-	cd $(OUTDIR) && bash $(SCRIPT)
+	cd $(OUTDIR) && bash canuscript.sh
 	@echo ">>> Test completado. Resultados en $(OUTDIR)/"
 
 clean:

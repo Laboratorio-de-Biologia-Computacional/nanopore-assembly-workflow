@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 .DS_Store
+results/
+test_output/
+resultados-ensamble/
