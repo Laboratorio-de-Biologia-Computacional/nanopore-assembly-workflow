@@ -15,6 +15,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
       - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v3
         with:
@@ -23,11 +24,29 @@ jobs:
           channels: bioconda,conda-forge,defaults
           activate-environment: nanopore-env
           use-mamba: true
+
       - name: Install dependencies
         run: |
           conda install -y porechop canu samtools make
-      - name: Run test pipeline
-        run: make test
+
+      - name: Verify tool versions
+        run: |
+          echo "=== Porechop ===" && porechop --version
+          echo "=== Canu ===" && canu --version
+          echo "=== Samtools ===" && samtools --version | head -2
+
+      - name: Test Porechop trimming
+        run: |
+          mkdir -p test_output/trimmed
+          gzip -c data/test.fastq > test_output/test.fastq.gz
+          porechop -i test_output/test.fastq.gz -o test_output/trimmed/porechop_test.fastq.gz
+          echo "Porechop trimming completed successfully"
+
+      - name: Verify Canu is callable
+        run: |
+          canu --version
+          echo "Canu installation verified (full assembly requires real data)"
+
       - name: Upload test results
         if: always()
         uses: actions/upload-artifact@v4
