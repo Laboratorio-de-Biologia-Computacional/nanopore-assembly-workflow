@@ -66,9 +66,9 @@ Ver [LICENSE](LICENSE) para más detalles.
 
 ---
 
-English version.
+## English
 
- 🧬 Genome Assembly Workflow from Nanopore Reads  
+🧬 Genome Assembly Workflow from Nanopore Reads
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
 [![CI](https://github.com/Laboratorio-de-Biologia-Computacional/nanopore-assembly-workflow/actions/workflows/ci.yml/badge.svg)](https://github.com/Laboratorio-de-Biologia-Computacional/nanopore-assembly-workflow/actions/workflows/ci.yml)  
